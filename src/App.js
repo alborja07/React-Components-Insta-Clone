@@ -10,7 +10,7 @@ import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 // import dummydata
 import PostsPage from './components/PostsContainer/PostsPage';
-import SearchBarContainer from './components/SearchBar/SearchBarContainer';
+import SearchBar from './components/SearchBar/SearchBarContainer';
 import dummyData from './dummy-data';
 
 const App = () => {
@@ -20,7 +20,8 @@ const App = () => {
   return (
     <div className="App">
       {/* Add components here  and pass props where appropriate */}
-      <PostsPage cardData = {data}/>
+      <PostsPage post = {data}/>
+      <SearchBar />
 
     </div>
   );
