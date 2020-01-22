@@ -20,9 +20,9 @@ const App = () => {
   return (
     <div className="App">
       {/* Add components here  and pass props where appropriate */}
-      <PostsPage post = {data}/>
-      <SearchBar />
-
+       <SearchBar />
+       <PostsPage post={data}/>
+     
     </div>
   );
 };

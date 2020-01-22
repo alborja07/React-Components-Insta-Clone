@@ -33,7 +33,7 @@ const Post = props => {
       <LikeSection addLikes={addLikes} likes={likes}/>
       <CommentSection
         postId={props.post.imageUrl}
-        comments={props.post.comments}
+        commentsOnly={props.post.comments}
       />
     </div>
   );

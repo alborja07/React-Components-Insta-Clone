@@ -6,18 +6,13 @@ import "./Comment.css";
 
 const CommentSection = props => {
   // Add state for the comments
-  const [comments, setComments] = useState(props.post.comments);
- 
-
+  const [comments, setComments] = useState(props.commentsOnly);
+  
+  console.log(props.commentsOnly, "!")
   return (
-    <div>
-      {props.post.map(p =>(
-       <CommentInput
-         
-        key={p.comments}
-        post={p}
-     
-       /> 
+    <div className='comment-box'>
+      {props.commentsOnly.map(p =>(
+        <Comment key={p.username} comment={p} />
       ))}
     </div>
   );
